@@ -4,7 +4,7 @@ Secure ignore list loader - replaces dangerous exec() calls
 import json
 import pathlib
 import re
-from typing import List, Optional
+from typing import List, Optional, Tuple
 import logging
 from input_validation import InputValidator
 
@@ -157,7 +157,7 @@ class SecureIgnoreLoader:
         logger.info(f"Saved {len(valid_ssids)} SSIDs to {file_path}")
 
 
-def load_ignore_lists(config: dict) -> tuple[List[str], List[str]]:
+def load_ignore_lists(config: dict) -> Tuple[List[str], List[str]]:
     """
     Convenience function to load both MAC and SSID ignore lists
     Returns: (mac_list, ssid_list)
