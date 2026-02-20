@@ -4,8 +4,8 @@
     "log_dir": "logs",
     "kismet_logs": "/home/matt/kismet_logs/*.kismet",
     "ignore_lists": {
-      "mac": "mac_list.py",
-      "ssid": "ssid_list.py"
+      "mac": "mac_list.json",
+      "ssid": "ssid_list.json"
     }
   },
   "timing": {
@@ -23,5 +23,10 @@
     "lat_max": 37.0,
     "lon_min": -114.8,
     "lon_max": -109.0
+  },
+  "api_keys": {
+    "wigle": {
+      "encoded_token": "QUlENjE3OWMxYjQyNGU2NTk4ZTUwY2FlNWM1ODBmMmU5MjY6YmJhNzAwYjFiYjQxMjE4NTc5Yjk4YjBlYTc5ZTg2M2Y="
+    }
   }
 }
